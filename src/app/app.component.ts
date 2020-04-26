@@ -12,41 +12,29 @@ export class AppComponent {
 
   url = 'https://www.hpb.health.gov.lk/api/get-current-statistical';
   details;
-  count = 0;
-  // _local_recovered=0;
+  data;
 
   constructor(private http: HttpClient) { }
-
-  click() {
-    return this.count++;
-  }
-
-
 
   ngOnInit() {
 
     this.http.get<any>(this.url).subscribe(response => {
       this.details = response.data;
-      //let _local_recovered = response.data.local_recovered;
-      //console.log(_local_recovered);
       this.chartData(response.data.local_total_cases,response.data.local_recovered,response.data.local_deaths)
     });
   }
 
-  chartData(a:number,b:number, c:number) {
+  chartData(_local_deaths:number,_local_recovered:number, _local_total_cases:number) {
     //CHART
-    var data = {
-      labels: ['Deaths', 'Recovered & Discharged', 'Total Confirmed Cases'],
+    this.data = {
+      labels: [ 'Total Confirmed Cases','Deaths','Recovered & Discharged'],
       datasets: [
         {
-          data: [a, b, c],
-          backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-          hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+          data: [_local_deaths ,_local_total_cases, _local_recovered],
+          backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56'],
+          hoverBackgroundColor: ['#36A2EB', '#FF6384', '#FFCE56'],
         },
       ],
     };
-console.log(a);
-console.log(b);
-console.log(c);
   }
 }
