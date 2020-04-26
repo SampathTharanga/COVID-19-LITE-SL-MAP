@@ -13,9 +13,7 @@ export class AppComponent {
   details;
   count = 0;
 
-  _local_recovered=0;
-
-
+  _local_recovered;
 
   constructor(private http: HttpClient) { 
     console.log(this._local_recovered); 
