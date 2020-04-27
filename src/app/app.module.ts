@@ -11,19 +11,24 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { ChartjsModule } from '@ctrl/ngx-chartjs';
 import {MatDividerModule} from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-
+import {  RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MapdataComponent } from './mapdata/mapdata.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent,
+    MapdataComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
