@@ -8,9 +8,9 @@
 // │ Linkdin   : https://www.linkedin.com/in/sampath-tharanga-b842b869/                                    │ \\
 // │ Github    : https://github.com/SampathTharanga                                                        │ \\
 // │                                                                                                       │ \\
-// │ Project   : LMCC System                                                                               │ \\
+// │ Project   : COVID - 19 SL LITE MAP                                                                    │ \\
 // │ Version   : 1.0.0.0                                                                                   │ \\
-// │ Release   : 2020.05.05                                                                                │ \\
+// │ Release   : 2020.04.27                                                                                │ \\
 // ├───────────────────────────────────────────────────────────────────────────────────────────────────────┤ \\
 // │ SAMPATH THARANGA | SRMST SAMARADIWAKARA                                            Copyright © 2020   │ \\
 // └───────────────────────────────────────────────────────────────────────────────────────────────────────┘ \\
