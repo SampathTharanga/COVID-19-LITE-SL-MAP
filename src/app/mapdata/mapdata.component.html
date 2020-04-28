@@ -1,7 +1,7 @@
 
 <div class="container-fluid">
     <div class="row main-row">
-        <div class="col-md-6">
+        <div class="col-md-6 mx-auto">
             <!--START RIGHT COLUMN (MAP)-->
             <svg xmlns:mapsvg="http://mapsvg.com" xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
@@ -115,16 +115,14 @@
         </div>
         <!--END LEFR COLUMN (MAP)-->
 
-        <div class="col-md-5">
+        <div class="col-md-5 mx-auto">
             <!--RIGHT COLUMN-->
             <div class="row">
                 <div class="col-md-12 mx-auto">
-                    <ngx-chartjs [data]="data" width="auto" height="300px">
-                        <p>{{details?.local_total_cases}}</p>
-                    </ngx-chartjs>
+                    <ngx-chartjs [data]="data" width="auto" height="300px">ng build --prod</ngx-chartjs>
                 </div>
             </div>
-            <div class="row count-list ">
+            <div class="row count-list">
                 <div class="col-md-12">
 
                     <div class="card text-white bg-warning mb-3 mx-auto" style="max-width: 18rem;">
