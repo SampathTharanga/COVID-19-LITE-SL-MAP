@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+![index](https://github.com/SampathTharanga/COVID-19-LITE-SL-MAP/assets/17849521/a83b1eb7-5579-4f77-960f-cefee0612da2)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
